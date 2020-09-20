@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000000"
+    tools:context=".MainActivity">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choose Photo"
+        android:onClick="choosePhoto"
+        android:background="@drawable/filter_button"
+        android:layout_margin="5dp"
+        android:textColor="#FFFFFF"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:scaleType="centerCrop"
+        android:id="@+id/image_view"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Photo"
+        android:onClick="savePhoto"
+        android:background="@drawable/filter_button"
+        android:layout_margin="5dp"
+        android:textColor="#FFFFFF"/>
+
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/filter_button"
+                android:layout_margin="5dp"
+                android:textColor="#FFFFFF"
+                android:text="Sepia"
+                android:onClick="applySepia"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/filter_button"
+                android:layout_margin="5dp"
+                android:textColor="#FFFFFF"
+                android:text="Retro"
+                android:onClick="applyRetro"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/filter_button"
+                android:layout_margin="5dp"
+                android:textColor="#FFFFFF"
+                android:text="GreyScale"
+                android:onClick="applyGreyscale"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/filter_button"
+                android:layout_margin="5dp"
+                android:textColor="#FFFFFF"
+                android:text="Reverse"
+                android:onClick="applyReverse"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/filter_button"
+                android:layout_margin="5dp"
+                android:textColor="#FFFFFF"
+                android:text="WhiteNoise"
+                android:onClick="applyWhitenoise"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/filter_button"
+                android:layout_margin="5dp"
+                android:textColor="#FFFFFF"
+                android:text="Blur"
+                android:onClick="applyBlur"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/filter_button"
+                android:layout_margin="5dp"
+                android:textColor="#FFFFFF"
+                android:text="Edge"
+                android:onClick="applyEdge"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/filter_button"
+                android:layout_margin="5dp"
+                android:textColor="#FFFFFF"
+                android:text="Fade"
+                android:onClick="applyFaded"/>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+
+</LinearLayout>
