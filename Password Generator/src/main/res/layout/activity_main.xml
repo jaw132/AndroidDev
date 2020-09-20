@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Generate Password"
+        android:layout_margin="5dp"
+        android:layout_gravity="center"
+        android:textSize="25dp"
+        android:textColor="#3FEEF4"
+        android:layout_marginTop="50dp"
+        />
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="200dp"
+        android:background="#FFFFFF">
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:id="@+id/password_box"
+            android:textSize="20dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="generatePassword"
+            android:layout_margin="5dp"
+            android:background="@drawable/button"
+            android:textColor="#FFFFFF"
+            android:text="Go"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="#FFFFFF">
+
+        <EditText
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/length_box"
+            android:hint="Set Length"
+            android:autofillHints="Length"
+            android:inputType="text"
+            android:gravity="center" />
+
+        <EditText
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/unwantedChars"
+            android:hint="Exclude Characters"
+            android:autofillHints="Unwanted Chars"
+            android:inputType="text"
+            android:gravity="center" />
+    </LinearLayout>
+
+
+
+</LinearLayout>
